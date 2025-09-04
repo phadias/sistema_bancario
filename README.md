@@ -67,7 +67,7 @@ O objetivo é implementar um sistema bancário simples em **Python**, utilizando
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/sistema-bancario.git
+   https://github.com/phadias/sistema_bancario/tree/Desafio_02
    ```
 2. Acesse a pasta do projeto:
    ```bash
