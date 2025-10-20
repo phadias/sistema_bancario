@@ -202,6 +202,8 @@ def recuperar_conta_cliente(cliente):
     return cliente.contas[0]
         
 def depositar(clientes):
+    limpar_tela()
+
     cpf = input('Informe o CPF do Cliente: ')
     cliente = filtrar_cliente(cpf, clientes)
 
@@ -228,6 +230,9 @@ def depositar(clientes):
 
 
 def sacar(clientes):
+
+    limpar_tela()
+    
     cpf = input('Informe o CPF do cliente: ')
     cliente = filtrar_cliente(cpf, clientes)
 
@@ -252,6 +257,8 @@ def sacar(clientes):
     input('Aperte Enter para voltar ao menu...')
 
 def exibir_extrato(clientes):
+    limpar_tela()
+    
     cpf = input('Informe o CPF do cliente: ')
     cliente = filtrar_cliente(cpf, clientes)
 
@@ -351,12 +358,12 @@ def main():
     clientes = []
     contas= []
 
+    limpar_tela()
+
+    print('\nBem-vindo!\n')
+    input('Aperte "Enter" para iniciar...')
+
     while True:
-
-        limpar_tela()
-
-        print('\nBem-vindo!\n')
-        input('Aperte "Enter" para iniciar...')
 
         selecao = menu(clientes)
 
